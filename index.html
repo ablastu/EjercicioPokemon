@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio AR.js - Pokémon Go Simulación</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+    <a-scene embedded arjs='sourceType: webcam;'>
+        <!-- Ajustar la posición de la cámara con la altura del usuario -->
+        <a-camera position="0 1.6 0"></a-camera>
+
+        <!-- Ajustar la posición del modelo 3D a 2m. de la cámara, sobre el suelo -->
+        <!-- Utilizar el componente 'look-at' para que el modelo siempre mire a la cámara -->
+        <a-entity gltf-model="src: url(95795d3d01e4_8f99b974ca01_celshaded__alien__c.glb)" position="0 0 -2" look-at="[camera]" scale="0.01 0.01 0.01"></a-entity>
+    </a-scene>
+</body>
+</html>
