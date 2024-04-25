@@ -9,20 +9,12 @@
 </head>
 
 <body>
-    
-        <!-- Ajustar la posición del modelo 3D a 2m. de la cámara, sobre el suelo -->
-        <!-- La posición Z negativa pone el modelo a 2 metros frente a la cámara -->
-        <!-- Utilizar el componente 'look-at' para que el modelo siempre mire a la cámara -->
-        <a-scene embedded arjs='sourceType: webcam;'>
-            <a-camera position="0 1.8 0"></a-camera>
-            <a-entity 
-                gltf-model="url(95795d3d01e4_8f99b974ca01_celshaded__alien__c.glb)" 
-                position="0 -0.5 -2"  
-                rotation="-180 0 0"    
-                look-at="[camera]"
-                scale="1 1 1">
-            </a-entity>
-        </a-scene>
+    <a-scene embedded arjs='sourceType: webcam;'>
+        <a-camera position="0 1.8 0"></a-camera>
+        <a-entity gltf-model="url(95795d3d01e4_8f99b974ca01_celshaded__alien__c.glb)" position="0 -0.5 -2"
+            rotation="-180 0 0" look-at="[camera]" scale="1 1 1">
+        </a-entity>
+    </a-scene>
 </body>
 
 </html>
